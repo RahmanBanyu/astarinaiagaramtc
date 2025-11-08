@@ -68,7 +68,7 @@
                             </div>
 
                             {{-- Departemen (jika teknisi) --}}
-                            @if ($isTeknisi)
+                            {{-- @if ($isTeknisi) --}}
                                 <div>
                                     <label class="block text-sm font-medium text-[#7A6C5D] mb-2" for="departemen">
                                         <i class="fas fa-building mr-2"></i>Departemen
@@ -82,7 +82,7 @@
                                         <option value="logistik" {{ old('departemen', $user->departemen ?? '') == 'logistik' ? 'selected' : '' }}>Logistik</option>
                                     </select>
                                 </div>
-                            @endif
+                            {{-- @endif --}}
 
                             {{-- Password --}}
                             <div>

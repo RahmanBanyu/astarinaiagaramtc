@@ -60,7 +60,7 @@
                                 <td class="px-4 py-2 border-b border-[#C0A785]/20">{{ $user->email }}</td>
                                 <td class="px-4 py-2 border-b border-[#C0A785]/20">{{ $user->phone }}</td>
                                 <td class="px-4 py-2 border-b border-[#C0A785]/20">
-                                    {{ $user->role === 'teknisi' ? $user->departemen : '-' }}
+                                    {{ $user->departemen }}
                                 </td>
                                 <td class="px-4 py-2 border-b border-[#C0A785]/20 space-x-3">
                                     <a href="{{ Request::is('teknisi') ? route('teknisi.edit', $user->id) : route('users.edit', $user->id) }}"
